@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en" data-lt-installed="true"><head>
+
+    <!-- Title -->
+    <title>Teaching Simplicity</title>
+
+    <!-- UTF-8 & Mobile -->
+    <!--<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=460">
+    
+	<!-- STYLES -->
+    <link rel="stylesheet" type="text/css" href="assets/merriweather.css" />
+    <link rel="stylesheet" type="text/css" href="assets/opensans.css" />
+    <link rel="stylesheet" type="text/css" href="assets/littlefoot.css" />
+    <link rel="stylesheet" type="text/css" href="assets/page.css"/>
+    
+	<!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js"></script>
+    <script>
+function checkIframeLoaded() {
+    // Get a handle to the iframe element
+    var iframe = document.getElementById('i_frame');
+    var iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    // Check if loading is complete
+    if (  iframeDoc.readyState  == 'complete' ) {
+        //iframe.contentWindow.alert("Hello");
+        iframe.contentWindow.onload = function(){
+            alert("I am loaded");
+            
+        };
+        // The loading is complete, call the function we want executed once the iframe is loaded
+        afterLoading();
+        return;
+    } 
+
+    // If we are here, it is not loaded. Set things up so we check   the status again in 100 milliseconds
+    window.setTimeout(checkIframeLoaded, 100);
+}
+function afterLoading(){
+    window.scrollTo(0,0);
+}
+    </script>
+    <script> 
+    var myFunc = function() {
+  alert('After 3 seconds of page load!');
+}
+window.onload = function() {
+  setTimeout( window.scrollTo(0,0), 3);
+}
+</script>
+
+</head>
+
+<body  dark_mode="no" font_family="serif" onload="checkIframeLoaded();" id="my-content">
+
+<!-- EVERYTHING TO THE LEFT of the sidebar... -->
+<div id="everything_container">
+    <!-- Depends if it's frontpage, or not -->
+    
+    <div id="header" class="article"> 
+        <div id="splash_image" style="image-rendering: pixelated;">
+            <img class="" id="splash_image_banner" src="assets/simplicity.png">
+        </div>
+        <div id="header_words" style="text-shadow: rgb(255, 255, 255) 0px 0px 2px, rgb(153, 203, 198) 0px 0px 2px, rgb(153, 190, 186) 0px 0px 2px;">
+    		<div id="title">
+    			Unqualified Teaching
+                <!-- well i mean its kinda teaching simplicity since programming
+                is the art of simple stuff, in the end i taught them the idea
+                of programming but never inspired them -->
+    		</div>
+            
+    		<div id="subtitle">
+
+                reading time: <span id="reading_time_header">CURRENTLY WIP</span>
+    			&nbsp;&nbsp;·&nbsp;&nbsp;
+
+                <span id="pub_date_header">on apr 24, 2024 &nbsp;&nbsp;·&nbsp;&nbsp;</span>
+                
+                by Jude Bondhus  &nbsp;&nbsp;·&nbsp;&nbsp;
+                Visits: <script type="text/javascript" src="//counter.websiteout.com/js/21/4/0/0"></script>
+    		</div>
+            
+        </div>
+	</div>
+    
+    <!-- BEHOLD! CONTENT!!!!! -->
+	<article id="content" style="font-size: 19px;">
+	    
+        <p style="background-color: rgb(255, 255, 204); border-radius: 25px; padding: 6px;">This website was made for a school paper, link to the paper is <a href="https://docs.google.com/document/d/1TabA1hKc9QPsA_QDRtzXx0b_jVSaK3GP_VvMByEGn0M/edit?usp=sharing" target="_blank">here.</a> 
+        <br>
+        It's completely different to this and talks about the issues/possible solutions for teaching math in the k-12 system.</p>
+        <h1>Introduction</h1>
+        <p>Before this paper starts, I would like to thank all of my peers who were willing to let me "teach them programming".
+            I learned so much from this experience and I am eternally grateful for their patience.
+        </p>
+        <p>When the average person thinks of code, they often see it as some alien knowledge created by some crazy math god.
+        </p>
+        <!-- well also its overwhelming to start, I need to incorporate this, and talk about that i was there too, empathy -->
+        <p>And with how many paths there is to take towards learning programming, it can be understandable to see it as an impossible skill. But it shouldn't need to be this way.
+        </p>
+        <p> I have also been in this situation, and this is why I wanted to spend three days to help give my peers an opportunity to learn programming.</p>
+        <p>If you can solve the problem 1 + x = 2, then you can program.
+        </p>
+        <!-- <p>The first common objection is, "doesn't programming take years to learn? Isn't there a reason why colleges have programs
+            to teach computer science?" And yes, it can take years to be good at programming huge systems. But if you want to start creating whatever you want, you
+            only need a few concepts. -->
+        </p>
+        <h1>Day One</h1>
+        <!-- <img src="assets/classroom.png" ></p> -->
+        <p>It took me a while to decide on what to start teaching first, programming is technically an infinitely complex field. So 
+            how do you give people the tools to begin creating something interesting, while also not overwhelming them?
+            <br>
+            I decided that you only needed to teach 3 main concepts to get the best of both worlds.
+        </p>
+        <p style="text-align: center;"> <strong> If Statements, Functions, and Variables</strong></p>
+        <p>Explaining what they are is out of the scope of this paper, but with these tools it is possible to create pretty much anything in programming. 
+        </p>
+        <p> The benefit to this is that it prevents cognitive overload. Cognitive overload is the natural
+            capacity of our short term memory to learn around 4 ± 1 things at once (Case).
+        </p>
+        <p>3 things to teach, sounds simple right? Well when you factor in something like <em>syntax</em>, the amount of things to keep stored in short term memory skyrockets (Hermans).</p>
+        <p>When my peers have to focus on where to put semicolon in code. They have no more room to focus
+            on the 3 main concepts I sought out to teach.
+        </p>
+        <p>
+            This is the same as teaching 
+            grammar in English. No one wants to learn it, so how do you sneak it in?
+        </p>
+        <p>Well turns out, there are not many options around it. Humans tend to learn brand new concepts through passive learning, essentially, word for word 
+            memorization (Hermans).
+        </p>
+        <p>This counteracts the popular belief that new students can learn how to code faster by exploring 
+         through experience such as trial and error. 
+        </p>
+        <p> In fact, according to a study done by <a href="https://www.youtube.com/watch?v=g1ib43q3uXQ">:Felienne Hermans,</a> students perform and learn syntax much better 
+        by <em>reading</em> "step by step" vs "exploring code" on their own.</p>
+        <p style="background-color: rgb(244, 244, 225);">Ex.<br> for i in range(4):
+            <br><br>
+            for i in range, round open bracket, four, round closing bracket, colon. 
+        </p>
+        <p> This relates back to the idea of cognitive load. A student can't start writing a novel without learning how to 
+            structure a word "letter by letter" first (Sian).
+        </p>
+        <p> 
+            Though, Here is the predicament,
+            according to the Yerkes-Dodson graph, students learn best when stress levels are kept at a sweet spot.
+            <img src="assets/yerke.png" class="center"> 
+            <br><sub class="center"><small>Arousal can also mean stress level*</small></sub>
+        </p>
+        <p>And since 
+            traditional programming requires learning syntax first, teaching both subjects at once would've
+            overwhelmed them, creating high <em>stress.</em>
+        </p>
+        <p>The solution?</p>
+        <img src="assets/Multimodality_chart.png" style="width: 100%;" class="floating"> 
+        <p>
+            While multimodals aren't the greatest at Teaching
+            dry skills like syntax, they can certainly help ease students into a topic as they tend to help gain a  
+            broad understanding (Amanda 13).
+        </p>
+        <p>I wanted to give my peers a basic concept of what programming is before they
+            learn the syntax as to not overwhelm them.
+        </p>
+        <!-- go back to paper and copy paste a multi modal section -->
+        <p>
+            In my other paper linked at the top of this page. I talk about the importance of multimodality in math. The objective in teaching is to change the perspective of a student.
+            Rigorous memorization of syntax is a skill learned through practice, and is something a teacher cannot teach (Lockhart 27).
+        </p>
+        <p>Therefore, multimodals thrive in teaching, as they are useful in engaging and making students think about a problem in a new way (Amanda 16).
+            
+            To assist in this point,
+            I've created a visual interactive that explains a simple math problem.
+        </p>
+        <button onclick="window.scrollTo(0,0)" id="myBtn" title="Go to top">For some reason the page scrolls to this interactive, if you just opened the page please click this button to scroll to top</button> 
+        <iframe frameborder="0" src="https://itch.io/embed-upload/10317543?color=4a5861" allowfullscreen="" width="640" height="380"><a href="https://furiousknight.itch.io/triangle-explanation">Play Triangle explanation on itch.io</a></iframe>
+       <!--Start BawkBox Code--><script data-sil-id="66347e65baee220013cb441b">var loadWidget = function() { var d = document, w = window, l = window.location,p = l.protocol == "file:" ? "http://" : "//"; if (!w.WS) w.WS = {}; c = w.WS; var m=function(t, o){ var e = d.getElementsByTagName("script"); e=e[e.length-1]; var n = d.createElement(t); if (t=="script") {n.async=true;} for (k in o) n[k] = o[k]; e.parentNode.insertBefore(n, e)}; m("script", { src: p + "bawkbox.com/widget/simple-poll/66347e65baee220013cb441b?page=" +encodeURIComponent(l+''), type: 'text/javascript' }); c.load_net = m; }; if(window.Squarespace){ document.addEventListener('DOMContentLoaded', loadWidget); setTimeOut(function(){ document.addEventListener('DOMContentLoaded', loadWidget); }, 3000) } else { loadWidget() } </script><div class="sil-widget-simple-poll sil-widget" id="sil-widget-66347e65baee220013cb441b"><a href="//bawkbox.com/install/simple-poll">Simple Polls</a></div><!-- End BawkBox Code-->       
+        <p>This is where multimodals truly shine, sure the final proof wasn't as rigorous as a step by step proof.
+            But it explains a pattern in a quick and intuitive way (Sanderson).
+        </p>
+        <p>***</p>
+            <!-- check kartak notes for this -->
+        <p>It may be a stretch to some people, but I believed that block coding is one of the best ways to learn programming.<img src="assets/loading_v800.png" alt="blockcoding"  class="center" style="width: 80%;"></p>
+        <p>Block coding combines the visual and spatial aspect of multimodality to explain and manipulate logic.
+            What makes this so perfect is that it takes away from the compact unreadable standard code to help students ease into the main(and more fun)
+            concept of programming.
+        </p>
+        <p>It's not that block coding is meant to take aspects away from programming, it's merely a different way to look at problems.
+            It's still possible to do the exact same things that a "real" programming language like <a href="https://en.wikipedia.org/wiki/C_(programming_language)">:C</a> can do.</p>
+        <!--placeholder for now, ohhh it wouldve been cool to attack a block or something but its whateves-->
+        <p><a href="https://youtu.be/LfaMVlDaQ24?si=1WUYGMgdNVQVx_uc">:Harvard University</a> even 
+            introduces <a href="https://en.wikipedia.org/wiki/Scratch_(programming_language)">:scratch</a> as the first programming language for students to learn in their class "CS50 introduction to programming." </p>
+
+        <!-- interesting challegens that regular programmers face -->
+        <p>There was one big flaw with this method though. Often, it would distract from the content that was meant to be taught. 
+            My peers would get stuck focusing on how to use the software instead of the core concepts being taught.
+        </p>
+        <!-- yeah maybe edit the image here cus thats a bit low -->
+        <p>(Sounds kind of like the original problem right?) But it could've been worse, if my peers started out <em>typing</em> programs, they would've been even more overwhelmed.</p>
+        <p>
+            Going back to the Yerkes-Dodson graph, this is my guess for where they were. <img src="assets/dot.png" class="center">
+        </p> 
+        <p>Given the time constraint, I tried my best to reduce this by creating preset files to work off of. 
+            If there was a perfect solution, it would be to create a custom multimodal interactive tailored for a topic that's charming, simple and engaging (Amanda 23). 
+        </p>
+        <p>All in all, day one got the main message across, and surprisingly my peers even remembered some of the details.  
+            <img src="assets/dayoneresults.png" alt="">
+        </p>
+        <p>Their stress/struggle level almost perfectly hit the sweet spot. 
+            The goal was to not have them always know what to do, nor should they have been completely clueless. 
+            So staying in the orange zone here fits Yerkes-Dodson's graph quite well.
+            <img src="assets/dayonefeeling.png" alt="">
+        </p>
+        <h1>:Side note</h1>
+        <p>This is a personal note, but I would knock each rating on the fun scale down by 3.
+           It's most likely only rated so high because they would've felt bad as friends.
+           <br><br>
+           definitely screw that person who voted 7, he prob cant make decisions lmao.
+        </p>
+        <!-- maybe include a section on how to create a good problem its in the summary after all, could extend day 2 more  -->
+        <!-- Also talk about how i really wanted them to start learning syntax despite it being overwhelmiing. I think that was actually just the core reason...-->
+        <!-- I went under the assumption that they thought block programming was for babies -->
+        <h1>Day 2</h1>
+        <p>It was time to move up a level. We could've stay in block coding for months, but I knew my friends would feel disappointed if they couldn't try out "the real deal".
+            
+        </p>
+        <p>
+            This was once again intimidating to both teach and for them to learn. They would have to learn another new software 
+            along with the dreaded topic of syntax.
+        </p>
+        <p>In hindsight, I wish I started with the "reading word by word" strategy. But the method I used did the job alright.  
+            My solution was to start teaching reading syntax instead of writing it. 
+        </p>
+        <p>I believed, that with basic knowledge, they could read this code by the end.
+            <img class="center" style="width: 90%"src="assets/program.png" alt="">
+        </p>
+        <p>To start, with the purpose of reducing cognitive load, I once again made preset projects to focus on a core topic.
+        </p>
+        <p>For example here is one of the "puzzles", used to teach functions and if statements.</p>
+        <img src="assets/doccode.png"style="width: 100%;"><img src="assets/notdoccode.png" style="width: 100%;">
+        <p>It was all pretty standard procedure. People were learning bit by bit how to code, but something interesting happened.
+             </p>
+            <!-- fix this -->
+        <p>
+            Later, we decided to go back to the original chunk of code that seemed to be 
+            impossibly complex. <img src="assets/program.png" alt="">
+        </p>
+        <p>Rather than just spitting out what this code did with a definite answer, I simply asked
+            my peers to infer about what this is. Even though they never learned how to make this specific code,
+            they understood that all they needed to know was variables, functions and if statements.
+        </p>
+        <!-- <p>The magic in this is that it gave them confidence to actually start having a discussion.</p> -->
+        <p>Sure, by the end of the talk they didn't fully understand what the code was, and to be honest even I didn't full understand what I wrote in that code. 
+            But the point is, they started to use critical thinking to come up with their own interpretations. They pretty much learned what its like to program,
+            this process is what programming is all about (Hermans).
+            <br><sub>Ps. <a href="https://youtu.be/t7TZIJXxw-Q"> :here</a> is an example of one of my peers going through the mental process of figuring out what this code is</sub>
+        </p>
+        
+        <p>
+            If only this had happened more, it was one of those magical moments where my peers could actually apply what they learned in their own way.
+        </p>
+        <h1>Day 3</h1>
+        
+        <p>It was a <b>catastrophe.</b></p>
+        <p>I had a lot of ambitions for the final day, and a lot of experimental ideas that I thought would work, but failed miserably. My ideas for the course
+            were so experimental to the point where it's hard to put into words for this paper.
+            <br>Here is a summary of the ambitions for the final day
+            <ol>
+                <li>How hard or easy it can be to create games</li>
+                <li>How easy it is to create games with the help of software</li>
+                <li>How to create unique and engaging ideas for games</li>
+                <li>Inspire my peers to learn and create games on their own</li>
+            </ol>
+        </p>
+        <p> At this point, I felt like I taught the most important things about programming. If I were to teach anything more,
+            it would've been about specific tools and techniques. 
+        </p>
+        <p>I <em>assumed</em> my peers would be better off learning this through experimentation and googling.</p>
+        <p>
+            As it was mentioned before, complete beginners learn best through passive learning. But since my peers had basic knowledge, I thought that they could start coding using active learning. After all, active learning is more fun right?
+        </p>
+        <p>Well it turns out they were not ready to start creating code on their own. Which should've been obvious, but I wanted to test a theory. If someone was there to 
+            guide them through the process, to give them the tools that they need, maybe they could've learned better?
+        </p>
+        <p>And to be honest, I still think that this method of teaching could've been great, to help them create what they are inspired to do. There 
+            was just one big thing that they lacked, which was a reason. 
+        </p>
+        <!-- <p>
+            Because if my peers didn't have a reason to create programs, they might end up asking the terrifying question "when will I use this".
+        </p>
+        <p>My answer to this question would most likely be, to help them to dip their toes into a new field that could help
+            them create "things". But I never actually got
+            started in programming for that reason. I started to make "cool things like video games".
+        </p> -->
+        <p>So here was my solution, teach them how to create a cool idea!
+        </p>
+        <p>This was an egotistical idea.</p>
+        <p>An idea that went terribly.</p>
+        <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGESeRHtFs&#x2F;sfJ3RRkUn3ZjJIddf8Ra6g&#x2F;view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+        <p>They were a multitude of reasons for why I almost blacked out; barely any sleep, food or water. But the main contributor
+            was a realization that this wasn't gonna work.
+        </p>
+        <p>I realized that I wasn't actually teaching them anything. 
+            At the point where I was, I was trying to explain how to create ideas,
+            it felt disjointed and unrelated.                  
+        </p>
+        <p>Embarrassingly enough, it was an prideful mindset to think that I could create a reason for them to 
+            create games, let alone programming. 
+        </p>
+        <p>I thought, if I could help them create an idea, then they would be inspired to create on their own
+            and that I could let them go from there. This was clearly not the case.
+        </p>
+        <p>This mindset is as useless as telling someone to "follow their passions".</p>
+        <p>Sure, reasons and inspiration can help. But there is a more universal solution to helping them be inspired.</p>
+        <p>Learning the programming itself.</p>
+        <p>Remember at day 2 when my peers were figuring this out? <img src="assets/program.png"></p>
+       <!-- talk about a meduim level of confidence, both the image and the right angle had a meduim level gap. ask jj or mom about the problem.  -->
+        <!-- solution is to just have people work on the game or to just start discussion, guh on paper this sounds like such a good plan, what went wrong --> 
+        <p>I've pondered this for a while, it doesn't make sense. Why would my peers be engaged in discussion about
+            something seeming less and random?
+        </p>
+        <p>The theory that applies here is once again, the Yerkes-Dodson theory.  
+            Being able to write in syntax is overwhelming and hard, often taking some people weeks or months to master.
+        </p>
+        <p>Since there was no goal of memorizing and writing syntax. My peers
+            were able to focus on something that wasn't too hard or easy.
+        </p>
+        <img src="assets/yerke_good.png">
+        <p>My peers were allowed to compare and contrast ideas on an equal level of skill.
+            No one really could've gotten it perfect, but since they had the confidence to solve the problem,
+            they got curious, and actually put <em>thought</em> into understanding the problem.
+        </p>
+        <p>It might not have been as riveting as binge watching a tv show, but in the words of one of my peers...</p>
+        <p>"We were actually able to apply what we learned, we recognized big functions and realized that we could become programmers too"</p>
+        <!-- took out "to" -->
+        <p>It might sound a cliche, but motivation is <em>earned</em> when people find out they learned something that can applied to something else (Meyer).</p>
+        <p>This creates a positive feedback loop.
+            Students put in the effort to learn, and get rewarded with the satisfaction of application. This satisfaction creates motivation,
+            which results in more effort to learn.
+        </p>
+        <p>There is raw enjoyment and interest in the cycle of learning. What I did by attempting to give them excitement through ideas
+            was covering the broccoli in chocolate.
+        </p>
+        <p>Embrace the learning process. "season & roast those veggies, bring out the natural tastiness that's already in the broccoli." (Case).</p>
+        <!-- make it better -->
+        <h1>Summary</h1>
+        <p>
+            <ol>
+                <li>Take 4±1 related topics to teach at once.</li>
+                <li>Start by explaining the broad idea of the topic(preferably multimodal).</li>
+                <li>Use passive learning to teach new topics.</li>
+                <li>Move into puzzles to build skill and long term memory.</li>
+                <li>With the newfound confidence, apply what was learned.</li>
+            </ol>
+        </p>
+        <p> Despite the extreme highs and lows, what's on this paper is a mere fraction of what I learned through teaching. 
+            Only one of my peers continued to program on his own, which means I have failed to teach in that aspect. 
+            But almost all of them left with a new perspective, so I am happy that I left even the smallest dent.
+        </p>
+        <p>Programming has a bad reputation, but with a change in perspective, it can be taught to anyone within a few hours.
+        </p>
+        <!-- begin wwww.htmlcommentbox.com --> 
+        <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com"></a> is loading comments...</div>
+        <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+        <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16798&num=10&ts=1714627735892");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+        <!-- end www.htmlcommentbox.com -->
+        <h2 style="background-color:rgb(168, 181, 119); text-align: center;" >: Works Cited</h2>
+        <p> 
+            <b>Beilock, Sian L., and Daniel T. Willingham.</b> “Ask the Cognitive Scientist.” Math Anxiety: Can Teachers Help Students Reduce It?, vol. 38, no. American Educator, 2014, pp. 28-32. Math Anxiety: Can Teachers Help Students Reduce It? Ask the Cognitive Scientist, https://files.eric.ed.gov/fulltext/EJ1043398.pdf. Accessed 16 3 2024.
+            <br><br>
+            <b>Boaler, Jo.</b> “Fluency Without Fear.” YouCubed, 28 01 2015, https://www.youcubed.org/evidence/fluency-without-fear/. Accessed 16 March 2024.
+            <br><br>
+            <b>Case, Nicky.</b> “Curse of the Chocolate-Covered Broccoli (or: Emotion in Learning).” Nicky's Blog, 5 December 2019, https://blog.ncase.me/curse-of-the-chocolate-covered-broccoli-or-emotion-in-learning/. Accessed 16 March 2024.
+            <br><br>
+            <b>Finkel, Dan</b> (2017, Feb) Five Principles of Extraordinary Math Teaching [Video] TED. https://www.youtube.com/watch?v=ytVneQUA5-c&pp=ygUNdGVhY2hpbmcgbWF0aA%3D%3D 
+            <br><br>
+            <b>Gonzalez, Jennifer.</b> “Frickin' Packets.” Cult of Pedagogy, 26 March 2018, https://www.cultofpedagogy.com/busysheets/. Accessed 8 April 2024.
+            <br><br>
+            <b>Hermans, Felienne</b> "How to teach programming (and other things)?",  “Strange Loop Conference”, 14 September 2019, youtube, https://www.youtube.com/watch?v=g1ib43q3uXQ Accessed 2 April, 24
+            <br><br>
+            <b>Muller, Derek A.</b> Khan Academy and the Effectiveness of Science Videos. 2011. youtube, https://www.youtube.com/watch?v=eVtCO84MDj8&t=258s.
+
+            "I need a counterclaim from a hostile audience for the following
+            claim: (claim) Students should be able to use AI software because they will need to use it in their future careers." prompt. ChatGPT, ChatGPT 3.5, OpenAI, 6 Feb. 2024, chat.openai.com/chat.
+            <br><br>
+            "I need a counterclaim from a hostile audience for the following
+            claim: (claim) Students should be able to use AI software because they will need to use it in their future careers." prompt. ChatGPT, ChatGPT 3.5, OpenAI, 6 Feb. 2024, chat.openai.com/chat.
+            <br><br>
+            "I need a counterclaim from a hostile audience for the following
+            claim: (claim) Students should be able to use AI software because they will need to use it in their future careers." prompt. ChatGPT, ChatGPT 3.5, OpenAI, 6 Feb. 2024, chat.openai.com/chat.
+            <br><br>
+            "I need a counterclaim from a hostile audience for the following
+            claim: (claim) Students should be able to use AI software because they will need to use it in their future careers." prompt. ChatGPT, ChatGPT 3.5, OpenAI, 6 Feb. 2024, chat.openai.com/chat.
+            <br><br>
+            "I need a counterclaim from a neutral audience for the following
+            claim: (claim) Students should be able to use AI software because they will need to use it in their future careers." prompt. ChatGPT, ChatGPT 3.5, OpenAI, 6 Feb. 2024, chat.openai.com/chat.
+            <br><br>
+            "I need a counterclaim from a neutral audience for the following
+            claim: (claim) Students should be able to use AI software because they will need to use it in their future careers." prompt. ChatGPT, ChatGPT 3.5, OpenAI, 6 Feb. 2024, chat.openai.com/chat.
+            <br><br>
+            "I need a counterclaim from a neutral audience for the following
+            claim: (claim) Students should be able to use AI software because they will need to use it in their future careers." prompt. ChatGPT, ChatGPT 3.5, OpenAI, 6 Feb. 2024, chat.openai.com/chat.
+            <br><br>
+            "I need a counterclaim from a neutral audience for the following
+            claim: (claim) Students should be able to use AI software because they will need to use it in their future careers." prompt. ChatGPT, ChatGPT 3.5, OpenAI, 6 Feb. 2024, chat.openai.com/chat.
+            <br><br>
+            <b>Meyer, Dan.</b> “If Math Is The Aspirin, Then How Do You Create The Headache?” dy/dan, 17 June 2015, https://blog.mrmeyer.com/2015/if-math-is-the-aspirin-then-how-do-you-create-the-headache/. Accessed 16 March 2024. 
+            <br><br>
+            <b>Kartak, Amanda.</b> Real World Reboot: Multimodality. 2022. Saint Mary's University of Minnesota, Masters of Education in Teaching and Learning.
+            <br><br>
+            <b> Lockhart, Paul.</b> A Mathematician's Lament. Illustrated edition ed., Bellevue Literary Press, 2009.
+            <br><br>
+            <b>Sanderson, Grant.</b> When do programmatic visuals help in understanding math? 14 Oct 2021. youtube, https://www.youtube.com/watch?v=gvck7ssg9dE. 
+            <br><br>
+            <b>Shoenfeld, Alan H.</b> “When Good Teaching Leads to Bad Results: The Disasters of "Well Taught" Mathematics Courses.” Educational Psychologist, vol. 23, no. 2, 1988, p. 22. researchgate, https://www.researchgate.net/profile/Alan-Schoenfeld-2/publication/239027194_When_Good_Teaching_Leads_to_Bad_Results_The_Disasters_of_%27Well-Taught%27_Mathematics_Courses/links/02e7e528dae5f8984d000000/When-Good-Teaching-Leads-to-Bad-Results-The-Disasters.
+            multimodal image from wikipedia    
+        </p>
+
+            
+       
+
+	</article>
+
+    <!-- FOOTER -->
+	<div id="footer">
+        <p>Credit to <a href="https://ncase.me/" target="_blank">Nicky Case</a> for using her website as an html/css template</p>
+	</div>
+    
+</div>
+
+</body></html>
